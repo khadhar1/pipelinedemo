@@ -2,26 +2,9 @@ pipeline {
     agent any
 
     stages {
-       
         stage('Hello') {
             steps {
                 echo 'Hello World'
-            }
-        } 
-        stage('Build') {
-            steps {
-                echo 'Building'
-                build quietPeriod: 5, job: 'dev1'
-            }
-        }
-        stage('Deploye') {
-            steps {
-                echo 'Deployeing'
-            }
-        } 
-        stage('Test') {
-            steps {
-                echo 'Testing'
             }
         }
     }
